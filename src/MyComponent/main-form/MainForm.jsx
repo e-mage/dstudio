@@ -59,7 +59,6 @@ const courses=[
                 <div className="main__form-input">
                     <h2>Ваш танцевальный курс</h2>
                     <UserForm/>
-
                 </div>
             }
         </div>
