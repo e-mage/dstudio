@@ -6,15 +6,18 @@ import {UserContext} from "../../context";
 
 const Course = (props) => {
 
+    console.log(props)
     const {isUser} = useContext(UserContext);
 
+    const chosenStyle = props.chosen ? { backgroundColor: 'green' } : {};
+
     return (
-        <div>
+        <div style={chosenStyle}>
             <img src={Dance} alt="icon dance"/>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <p>{props.price}</p>
-            <button disabled={!isUser}>Записаться на курс</button>
+            <button disabled={!isUser} onClick={props.setSelected}>Показать информацию</button>
         </div>
     );
 };

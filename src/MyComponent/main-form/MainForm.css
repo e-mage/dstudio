@@ -45,7 +45,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
+    /*border: solid 1px #787878;
+    border-radius: 10px;
+    margin-left: 15px;*/
 }
 .main__form-input form{
 display: flex;

@@ -1,0 +1,14 @@
+.main__show-course{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px #787878;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.main__show-course p {
+    padding: 10px 30px;
+}

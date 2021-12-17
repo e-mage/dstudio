@@ -10,7 +10,7 @@ const {setIsUser} = useContext(UserContext);
    function onSubmit(e){
        e.preventDefault();
        localStorage.setItem('name', name);
-       localStorage.setItem('tell', tell);
+       localStorage.setItem('tel', tell);
        setIsUser(true);
    }
 

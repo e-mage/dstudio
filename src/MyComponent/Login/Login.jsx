@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import {UserContext} from "../../context";
+import '../main/Main.css';
 
 const Login = () => {
     const {setIsAuth} = useContext(UserContext);
@@ -15,7 +16,7 @@ const Login = () => {
         }
     }
     return (
-        <div>
+        <div className="main">
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
                 <input type="text" placeholder="login" value={login} onChange={event => setLogin(event.target.value)}/>

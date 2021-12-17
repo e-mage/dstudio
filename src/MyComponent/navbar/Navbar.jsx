@@ -4,6 +4,7 @@ import Icon from './icon VK.png'
 import Insta from './Insta.png'
 import {UserContext} from "../../context";
 import {Link, useNavigate} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 
 function Navbar(){
@@ -13,9 +14,10 @@ function Navbar(){
     return (
         <nav className="header__top_navigator">
             <ul className="nav__content">
-                <li><Link to="/#article">О&nbsp;студии</Link></li>
-                <li><Link to="/#Form">Записаться на курс</Link></li>
-                <li><Link to="/#Footer">Котакты</Link></li>
+                <li><HashLink smooth to="/#article">О&nbsp;студии</HashLink></li>
+                <li><HashLink smooth to="/#Form">Записаться на курс</HashLink></li>
+                <li><HashLink smooth to="/#Footer">Котакты</HashLink></li>
+                <li><Link to="/private">Admin</Link></li>
                 <li>{ isAuth ? <button onClick={() => setIsAuth(false)}>Logout</button>
                     : <button onClick={() => navigate(`/private`)}>Login</button>
                 }</li>
